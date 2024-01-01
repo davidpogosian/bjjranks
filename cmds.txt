@@ -9,3 +9,6 @@ ECHO src files compiled
 C:\Users\David\apache-tomcat-9.0.80\bin\startup.bat
 pause
 @ECHO ON
+
+    
+/opt/apache-tomcat-10.1.17/webapps/bjjranks/src/keystore.jks

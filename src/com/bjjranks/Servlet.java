@@ -9,6 +9,14 @@ import java.io.PrintWriter;
 
 public class Servlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.getWriter().println("Hello, Servlet!");
+        switch(request.getServletPath()) {
+            case "/hi":
+                response.getWriter().println("Hello, Servlet!");
+                break;
+            case "/bye":
+                response.getWriter().println("Goodbye, Servlet!");
+                break;
+        }
+        
     }
 }
