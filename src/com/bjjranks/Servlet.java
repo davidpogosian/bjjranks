@@ -16,6 +16,9 @@ public class Servlet extends HttpServlet {
             case "/bye":
                 response.getWriter().println("Goodbye, Servlet!");
                 break;
+            default:
+                response.getWriter().println("Default.");
+                break;
         }
         
     }
