@@ -12,3 +12,10 @@ pause
 
     
 /opt/apache-tomcat-10.1.17/webapps/bjjranks/src/keystore.jks
+
+
+
+
+
+Changing /etc/apache2/sites-enabled/bjjranks.com-le-ssl.conf
+to redirect to /bjjranks.
