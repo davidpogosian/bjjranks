@@ -4,7 +4,7 @@
 src_dir="src/com/bjjranks/"
 
 # Destination directory
-dest_dir="WEB-INF/classes/com/bjjranks/"
+dest_dir="WEB-INF/classes/"
 
 # Library directory
 lib_dir="WEB-INF/lib/"
