@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/style.css" type="text/css"></link>
 </head>
 <body>
+    <h1>Again</h1>
 	<div align="center">
 		<h1> Welcome to BJJRanks </h1>
         <p>${pageContext.request.contextPath}</p>
