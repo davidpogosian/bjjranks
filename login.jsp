@@ -5,6 +5,12 @@
 	<meta charset="ISO-8859-1">
 	<title> treecutting </title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" type="text/css"></link>
+    <style>
+        /* Add this style to check if it gets applied */
+        h1 {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
 	<div align="center">
