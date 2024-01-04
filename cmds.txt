@@ -1,4 +1,4 @@
-javac -d WEB-INF/classes -cp "C:\Users\David\apache-tomcat-10.1.17\webapps\bjjranks\WEB-INF\lib\servlet-api.jar" src/com/bjjranks/Servlet.java
+javac -d WEB-INF/classes -cp WEB-INF/lib/servlet-api.jar ./src/com/bjjranks/Servlet.java
 
 javac -d "C:\Users\David\apache-tomcat-10.1.17\webapps\bjjranks\WEB-INF\classes" -cp "C:\Users\David\apache-tomcat-10.1.17\webapps\bjjranks\WEB-INF\lib\servlet-api.jar" src/com/bjjranks/Servlet.java
 
@@ -19,3 +19,8 @@ pause
 
 Changing /etc/apache2/sites-enabled/bjjranks.com-le-ssl.conf
 to redirect to /bjjranks.
+
+
+
+sudo usermod -aG tomcat david
+I want david user to be able to access /opt/tomcat directory.

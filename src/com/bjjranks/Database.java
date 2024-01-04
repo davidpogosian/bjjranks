@@ -2,35 +2,51 @@ package com.bjjranks;
 
 import java.sql.*;
 
+import java.util.Properties;
+
 public class Database {
 	private Connection connection;
 
-	public Database() {
-		/*
-		String url = "jdbc:postgresql://localhost/test";
-		Properties props = new Properties();
-		props.setProperty("user", "david");
-		props.setProperty("password", "secret");
-		props.setProperty("ssl", "false");
-		connection = DriverManager.getConnection(url, props);
-		*/
+	public Database() {		
+		loadDriver();
+	}
+
+	private void loadDriver() {
 		try {
 			Class.forName("org.postgresql.Driver");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
+	}
 
-		String url = "jdbc:postgresql://localhost/test?user=david&password=password&ssl=false";
+	private void connect() {
 		try {
-			connection = DriverManager.getConnection(url);
-
-		Statement stmt = connection.createStatement();
-		String CreateSql = "Create Table NewTable(id int primary key,cname varchar, address text) ";
-		stmt.executeUpdate(CreateSql);
-		stmt.close();
-		connection.close();
+			String url = "jdbc:postgresql://localhost/test";
+			Properties props = new Properties();
+			props.setProperty("user", "david");
+			props.setProperty("password", "password");
+			props.setProperty("ssl", "false");
+			connection = DriverManager.getConnection(url, props);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+
+	public void reset() {
+		try {
+			System.out.println("Reseting Database.");
+			connect();
+			Statement stmt = connection.createStatement();
+			stmt.executeUpdate("DROP TABLE IF EXISTS newtable");
+			stmt.executeUpdate("CREATE TABLE newtable(id int primary key, cname varchar, address text)");
+			stmt.close();
+			disconnect();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private void disconnect() throws SQLException {
+		connection.close();
 	}
 }
