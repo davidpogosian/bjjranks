@@ -29,7 +29,6 @@ public class Servlet extends HttpServlet {
                 response.getWriter().println("Goodbye, Servlet!");
                 break;
             case "/login":
-		        System.out.println("Get request to /login.");
                 try {
                     request.getRequestDispatcher("login.jsp").forward(request, response);
                 } catch (ServletException e) {
