@@ -50,3 +50,8 @@ p {
 }
 
 /* Add more styles as needed for your specific project */
+
+/* Make h1 text red */
+h1 {
+  color: red;
+}
