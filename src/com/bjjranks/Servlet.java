@@ -27,8 +27,8 @@ public class Servlet extends HttpServlet {
             case "/bye":
                 response.getWriter().println("Goodbye, Servlet!");
                 break;
-            default:
-		        System.out.println("Get request to /.");
+            case "/login":
+		        System.out.println("Get request to /login.");
                 try {
                     request.getRequestDispatcher("login.jsp").forward(request, response);
                 } catch (ServletException e) {
