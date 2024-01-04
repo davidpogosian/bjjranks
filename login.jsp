@@ -9,6 +9,7 @@
 <body>
 	<div align="center">
 		<h1> Welcome to BJJRanks </h1>
+        <p>${pageContext.request.contextPath}</p>
 		<form action="handleResetDatabase" method="post">
 			<table border="1" cellpadding="5">
 				<tr>
