@@ -4,7 +4,7 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title> treecutting </title>
-    <link rel="stylesheet" href="/css/style.css" type="text/css"></link>
+    <link rel="stylesheet" href="css/style.css" type="text/css"></link>
 </head>
 <body>
     <h1>${pageContext.request.contextPath}</h1>
