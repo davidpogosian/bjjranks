@@ -4,13 +4,7 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title> treecutting </title>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" type="text/css"></link>
-    <style>
-        /* Add this style to check if it gets applied */
-        h1 {
-            color: blue;
-        }
-    </style>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/style.css" type="text/css"></link>
 </head>
 <body>
 	<div align="center">
