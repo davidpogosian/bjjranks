@@ -5,9 +5,6 @@
 	<meta charset="ISO-8859-1">
 	<title> treecutting </title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" type="text/css"></link>
-    <style>
-        <%@ include file="style.css"%>
-   </style>
 </head>
 <body>
     <h1>${pageContext.request.contextPath}</h1>

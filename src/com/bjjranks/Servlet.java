@@ -20,6 +20,7 @@ public class Servlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        System.out.printf("GET request for: %s \n", request.getServletPath());
         switch(request.getServletPath()) {
             case "/hi":
                 response.getWriter().println("Hello, Servlet!");
