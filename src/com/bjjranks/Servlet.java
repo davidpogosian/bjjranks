@@ -7,7 +7,12 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+
+
 public class Servlet extends HttpServlet {
+	private Database database = new Database();
+
+
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         switch(request.getServletPath()) {
             case "/hi":
@@ -17,9 +22,9 @@ public class Servlet extends HttpServlet {
                 response.getWriter().println("Goodbye, Servlet!");
                 break;
             default:
-                response.getWriter().println("Default.");
+		System.out.println("David's console log.");
+                response.getWriter().println("Hi Nidhi!");
                 break;
         }
-        
     }
 }
