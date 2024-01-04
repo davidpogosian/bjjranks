@@ -4,7 +4,7 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title> treecutting </title>
-	<link rel="stylesheet" href="/css/index.css"/>
+	<link rel="stylesheet" href="../css/index.css"/>
 </head>
 <body>
 	<div align="center">

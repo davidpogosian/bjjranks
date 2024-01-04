@@ -9,7 +9,17 @@ import java.io.IOException;
 public class Servlet extends HttpServlet {
 	private Database database = new Database();
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        switch(request.getServletPath()) {
+            case "/handleResetDatabase":
+                database.reset();
+                break;
+        }
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         switch(request.getServletPath()) {
             case "/hi":
                 response.getWriter().println("Hello, Servlet!");
@@ -17,8 +27,6 @@ public class Servlet extends HttpServlet {
             case "/bye":
                 response.getWriter().println("Goodbye, Servlet!");
                 break;
-            case "/handleResetDatabase":
-                database.reset();
             default:
 		        System.out.println("Get request to /.");
                 try {
