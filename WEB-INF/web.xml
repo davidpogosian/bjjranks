@@ -9,15 +9,15 @@
         <servlet-name>servlet</servlet-name>
         <servlet-class>com.bjjranks.Servlet</servlet-class>
     </servlet>
-    
-    <servlet-mapping>
-        <servlet-name>servlet</servlet-name>
-        <url-pattern></url-pattern>
-    </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>servlet</servlet-name>
         <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>servlet</servlet-name>
+        <url-pattern></url-pattern>
     </servlet-mapping>
 
     <!-- Welcome File List -->
