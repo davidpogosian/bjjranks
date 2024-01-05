@@ -10,7 +10,6 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
-  font: italic small-caps bold 12px/30px Georgia, serif;
 }
 
 /* Apply a box-sizing border-box model to all elements */
@@ -20,7 +19,7 @@ li {
 
 /* Set a base font size and family for better readability */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Fira Code', sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
