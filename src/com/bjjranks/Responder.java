@@ -37,7 +37,7 @@ public class Responder {
 
     public void david() {
         try {
-            request.getRequestDispatcher("users/david.jsp").forward(request, response);
+            request.getRequestDispatcher("david.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
