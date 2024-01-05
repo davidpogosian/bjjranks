@@ -25,6 +25,7 @@ public class Router {
 
     private void root() {
         if (atEnd()) {
+            System.out.println("Root");
             responder.root();
             return;
         }
@@ -42,6 +43,7 @@ public class Router {
 
     private void users() {
         if (atEnd()) {
+            System.out.println("Users");
             responder.users();
             return;
         }
@@ -59,6 +61,7 @@ public class Router {
 
     private void david() {
         if (atEnd()) {
+            System.out.println("David");
             responder.david();
             return;
         }
