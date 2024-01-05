@@ -26,6 +26,7 @@ public class Router {
     private void root() {
         if (atEnd()) {
             responder.root();
+            return;
         }
 
         switch (path.get(cursor++)) {
@@ -42,6 +43,7 @@ public class Router {
     private void users() {
         if (atEnd()) {
             responder.users();
+            return;
         }
 
         switch (path.get(cursor++)) {
@@ -58,6 +60,7 @@ public class Router {
     private void david() {
         if (atEnd()) {
             responder.david();
+            return;
         }
 
         switch (path.get(cursor++)) {
