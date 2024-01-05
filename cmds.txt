@@ -24,3 +24,17 @@ to redirect to /bjjranks.
 
 sudo usermod -aG tomcat david
 I want david user to be able to access /opt/tomcat directory.
+
+
+
+/*
+/users/*
+/teams/*
+
+Split path along the slashes.
+
+ex
+
+/home
+/users/{id}
+/teams/{id}

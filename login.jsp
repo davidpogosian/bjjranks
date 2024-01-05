@@ -3,14 +3,12 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title> treecutting </title>
+	<title> BJJRanks </title>
     <link rel="stylesheet" href="static/css/style.css" type="text/css"></link>
 </head>
 <body>
-    <h1>${pageContext.request.contextPath}</h1>
 	<div align="center">
 		<h1> Welcome to BJJRanks </h1>
-        <p>${pageContext.request.contextPath}</p>
 		<form action="handleResetDatabase" method="post">
 			<table border="1" cellpadding="5">
 				<tr>
