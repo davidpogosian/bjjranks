@@ -26,11 +26,14 @@ public class Router {
     private void root() {
         if (atEnd()) {
             System.out.println("Root");
-            responder.root();
+            // Is it possible to request bjjranks.com/?
             return;
         }
 
         switch (path.get(cursor++)) {
+            case "idnex.html":
+                responder.root();
+                break;
             case "users":
                 users();
                 break;
