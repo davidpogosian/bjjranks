@@ -31,7 +31,7 @@ public class Router {
         }
 
         switch (path.get(cursor++)) {
-            case "idnex.html":
+            case "index.html":
                 responder.root();
                 break;
             case "users":
