@@ -30,10 +30,10 @@ public class Servlet extends HttpServlet {
         switch(request.getServletPath()) {
             case "/write":
                 var = "SKIBIDI";
-                response.getWriter().printf("Wrote, var: $s", var);
+                response.getWriter().printf("Wrote, var: %s", var);
                 break;
             case "/read":
-                response.getWriter().printf("var: $s", var);
+                response.getWriter().printf("var: %s", var);
                 break;
             case "/login":
                 try {
